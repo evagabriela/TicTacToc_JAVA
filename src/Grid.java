@@ -33,5 +33,7 @@ public class Grid {
     }
 
 
-
+    public boolean isPositionTaken(int location) {
+        return false;
+    }
 }
