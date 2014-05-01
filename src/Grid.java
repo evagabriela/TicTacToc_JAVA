@@ -9,4 +9,7 @@ public class Grid {
         System.out.println("-----");
         System.out.println(" | | ");
     }
+
+    public void drawWithInput(String marker) {
+    }
 }
