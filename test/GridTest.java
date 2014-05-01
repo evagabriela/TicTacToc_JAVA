@@ -76,7 +76,7 @@ public class GridTest {
 //     Alternate player turns until the board is filled. Draw the board once it is full and display the message, “Game is a draw”.
     @Test
     public void shouldReturnTrueIfGridIsFull(){
-         String marker= "X";
+        String marker= "X";
 
             for (int i = 1; i <= positions.size(); i++) {
                 grid.drawWithInput(i, marker);
@@ -84,6 +84,29 @@ public class GridTest {
         assertTrue(grid.isFull());
     }
 
+    @Test
+    public void shouldDrawGridOnceIsFilled(){
+        grid.drawWithInput(1, "X");
+        grid.drawWithInput(2, "O");
+        grid.drawWithInput(3, "X");
+        grid.drawWithInput(4, "O");
+        grid.drawWithInput(5, "X");
+        grid.drawWithInput(6, "O");
+        grid.drawWithInput(7, "X");
+        grid.drawWithInput(8, "O");
+        grid.drawWithInput(9, "X");
+        grid.isFull();
 
 
+        String filledBoard="X|O|X\n"
+                         + "-----\n"
+                         + "O|X|O\n"
+                         + "-----\n"
+                         + "X|O|X\n" ;
+
+        grid.displayFinalGrid();
+
+        verify(printStream).println(filledBoard);
+
+    }
 }
