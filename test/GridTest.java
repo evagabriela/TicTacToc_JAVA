@@ -69,6 +69,6 @@ public class GridTest {
     public void shouldReturnFalseIfPositionIsNotTaken(){
         int location = 3;
 
-        assertFalse(grid.isPositionAvailable(location));
+        assertFalse(grid.isPositionTaken(location));
     }
 }

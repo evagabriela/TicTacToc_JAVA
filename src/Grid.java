@@ -37,7 +37,5 @@ public class Grid {
             return !(positions.get(position - 1).equals(" "));
     }
 
-    public boolean isPositionAvailable(int position) {
-        return false;
-    }
+
 }
