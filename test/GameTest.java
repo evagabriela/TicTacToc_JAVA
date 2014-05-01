@@ -1,4 +1,3 @@
-import Game.Game;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -46,7 +45,22 @@ public class GameTest {
         verify(out).println("Location already taken");
     }
 
+    @Test
+    public void shouldReturnMessageIfGridIsFull(){
+        grid.drawWithInput(1, "X");
+        grid.drawWithInput(2, "O");
+        grid.drawWithInput(3, "X");
+        grid.drawWithInput(4, "O");
+        grid.drawWithInput(5, "X");
+        grid.drawWithInput(6, "O");
+        grid.drawWithInput(7, "X");
+        grid.drawWithInput(8, "O");
+        grid.drawWithInput(9, "X");
 
+        grid.isFull();
+
+        verify(out).println("Game is a draw");
+    }
 
 
 }
