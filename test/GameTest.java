@@ -35,12 +35,14 @@ public class GameTest {
         verify(out).println("Please enter a number between 1 and 9");
     }
 
+    @Test
+    public void shouldReturnAMessageIfLocationAlreadyTaken(){
+        int location = 1;
+        String marker="X";
+        grid.drawWithInput(location, marker);
+        grid.isPositionTaken(1);
 
-
-
-
-
-
-
+        verify(out).println("Location already taken");
+    }
 
 }

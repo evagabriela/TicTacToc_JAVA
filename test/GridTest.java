@@ -53,9 +53,10 @@ public class GridTest {
         assertEquals("O", positions.get(0));
     }
 
-    //    Location already taken
-//    If either player moves into a cell that is already used, display the message, “Location already taken”
-   // and prompt them to try again (repeat this until they make a valid move).
+//    Location already taken
+//    If either player moves into a cell that is already used,
+// display the message, “Location already taken” and prompt them to try again (repeat this until they make a valid move).
+//   ********   Pending to add message   *******
     @Test
     public void shouldReturnTrueIfPositionAlreadyTaken(){
         int location = 1;
@@ -70,5 +71,18 @@ public class GridTest {
         int location = 3;
 
         assertFalse(grid.isPositionTaken(location));
+    }
+
+//    Repeat until the board is filled
+//     Alternate player turns until the board is filled. Draw the board once it is full and display the message, “Game is a draw”.
+    @Test
+    public void shouldReturnTrueIfGridIsFull(){
+         String marker= "X";
+
+            for (int i = 1; i <= positions.size(); i++) {
+                grid.drawWithInput(i, marker);
+            }
+
+        assertTrue(grid.isFull());
     }
 }

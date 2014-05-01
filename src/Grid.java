@@ -38,4 +38,9 @@ public class Grid {
     }
 
 
+    public boolean isFull() {
+        return false;
+    }
+
+
 }
