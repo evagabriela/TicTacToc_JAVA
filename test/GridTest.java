@@ -73,9 +73,6 @@ public class GridTest {
         assertFalse(grid.isPositionTaken(location));
     }
 
-
-//    Repeat until the board is filled
-//     Alternate player turns until the board is filled. Draw the board once it is full and display the message, “Game is a draw”.
     @Test
     public void shouldReturnTrueIfGridIsFull(){
         String marker= "X";
@@ -111,4 +108,5 @@ public class GridTest {
         verify(printStream).println(filledBoard);
 
     }
+
 }

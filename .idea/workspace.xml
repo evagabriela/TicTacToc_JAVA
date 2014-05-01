@@ -80,8 +80,8 @@
       <file leaf-file-name="GridTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/GridTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.8013245" vertical-offset="1332" max-vertical-offset="1785">
-              <caret line="113" column="39" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
+            <state vertical-scroll-proportion="0.8013245" vertical-offset="1287" max-vertical-offset="1755">
+              <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -104,8 +104,8 @@
         <option value="$PROJECT_DIR$/src/Game.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/test/GameTest.java" />
-        <option value="$PROJECT_DIR$/test/GridTest.java" />
         <option value="$PROJECT_DIR$/src/Grid.java" />
+        <option value="$PROJECT_DIR$/test/GridTest.java" />
       </list>
     </option>
   </component>
@@ -552,12 +552,12 @@
       <changelist id="571615a8-ad9b-47d3-a565-9b2b47ddb159" name="Default" comment="" />
       <created>1398970932925</created>
       <updated>1398970932925</updated>
-      <workItem from="1398970936383" duration="12566000" />
+      <workItem from="1398970936383" duration="12618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12566000" />
+    <option name="totallyTimeSpent" value="12618000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="26" width="1440" height="790" extended-state="6" />
@@ -693,8 +693,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/GridTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8013245" vertical-offset="1332" max-vertical-offset="1785">
-          <caret line="113" column="39" selection-start-line="113" selection-start-column="39" selection-end-line="113" selection-end-column="39" />
+        <state vertical-scroll-proportion="0.8013245" vertical-offset="1287" max-vertical-offset="1755">
+          <caret line="110" column="4" selection-start-line="110" selection-start-column="4" selection-end-line="110" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
