@@ -46,6 +46,8 @@ public class Grid {
 
 
     public void displayFinalGrid() {
-
+        if (isFull()){
+           draw();
+        }
     }
 }
