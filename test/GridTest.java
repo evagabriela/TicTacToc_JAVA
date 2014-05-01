@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.BufferedReader;
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -19,13 +20,14 @@ public class GridTest {
     private PrintStream printStream;
     private Grid grid;
     private ArrayList<String> positions;
-     private PrintStream out;
+    private PrintStream out;
+     private BufferedReader reader;
 
     @Before
     public void setUp() {
         printStream= mock(PrintStream.class);
         positions= new ArrayList<String>(Arrays.asList(" ", " ", " ", " ", " ", " ", " ", " ", " "));
-        grid= new Grid(printStream, positions);
+        grid= new Grid(printStream, positions, reader);
         out = mock(PrintStream.class);
     }
 

@@ -1,3 +1,4 @@
+import java.io.BufferedReader;
 import java.io.PrintStream;
 import java.util.ArrayList;
 
@@ -7,12 +8,14 @@ import java.util.ArrayList;
 public class Grid {
 
     private final PrintStream printStream;
+    private final BufferedReader reader;
     private ArrayList<String> positions;
 
 
-    public Grid(PrintStream printStream, ArrayList<String> positions) {
+    public Grid(PrintStream printStream, ArrayList<String> positions, BufferedReader reader) {
         this.printStream = printStream;
         this.positions = positions;
+        this.reader = reader;
     }
 
 

@@ -1,6 +1,7 @@
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.PrintStream;
 import java.util.ArrayList;
@@ -18,13 +19,14 @@ public class GameTest {
     private Grid grid;
     private ArrayList<String> positions;
     private PrintStream printStream;
+    private BufferedReader reader;
 
     @Before
     public void setUp() throws Exception {
         out = mock(PrintStream.class);
-        game = new Game(out, positions);
+        game = new Game(out, reader);
         positions= new ArrayList<String>(Arrays.asList(" ", " ", " ", " ", " ", " ", " ", " ", " "));
-        grid = new Grid(printStream, positions);
+        grid = new Grid(printStream, positions, reader);
 
     }
 
