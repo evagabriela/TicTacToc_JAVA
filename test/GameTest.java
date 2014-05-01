@@ -58,6 +58,7 @@ public class GameTest {
         grid.drawWithInput(9, "X");
 
         grid.isFull();
+        game.fullGridMessage();
 
         verify(out).println("Game is a draw");
     }

@@ -21,4 +21,8 @@ public class Game {
     public void positionTakenMessage() {
         printStream.println("Location already taken");
     }
+
+    public void fullGridMessage(){
+        printStream.println("Game is a draw");
+    }
 }
