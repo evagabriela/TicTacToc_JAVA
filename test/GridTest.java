@@ -5,6 +5,7 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+import static junit.framework.TestCase.assertFalse;
 import static junit.framework.TestCase.assertTrue;
 import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
@@ -56,11 +57,20 @@ public class GridTest {
 //    If either player moves into a cell that is already used, display the message, “Location already taken”
    // and prompt them to try again (repeat this until they make a valid move).
     @Test
-    public void shouldDisplayIfPositionAlreadyTaken(){
-        int location=1;
+    public void shouldReturnTrueIfPositionAlreadyTaken(){
+        int location = 1;
         String marker="X";
         grid.drawWithInput(location, marker);
 
         assertTrue(grid.isPositionTaken(location));
+    }
+
+    @Test
+    public void shouldReturnFalseIfPositionIsNotTaken(){
+        int location = 1;
+        String marker = "X";
+        grid.drawWithInput(location, marker);
+
+        assertFalse(grid.isPositionAvailable(location));
     }
 }

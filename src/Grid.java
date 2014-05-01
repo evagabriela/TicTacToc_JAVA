@@ -33,7 +33,11 @@ public class Grid {
     }
 
 
-    public boolean isPositionTaken(int location) {
+    public boolean isPositionTaken(int position) {
+            return !(positions.get(position - 1).equals(" "));
+    }
+
+    public boolean isPositionAvailable(int position) {
         return false;
     }
 }
