@@ -38,9 +38,19 @@ public class GridTest {
    }
 
     @Test
-    public void shouldRedrawBoardIncludingPlayerInput(){
+    public void shouldMarkGridWhenPlayerOneMoves(){
         String marker = "X";
         grid.drawWithInput(1,marker);
         assertEquals("X", positions.get(0));
     }
-}
+
+    @Test
+    public void shouldMarkGridWhenPlayerTwoMoves(){
+        String marker = "O";
+        grid.drawWithInput(1, marker);
+        assertEquals("O", positions.get(0));
+    }
+
+    //    Location already taken
+//    If either player moves into a cell that is already used, display the message, “Location already taken”
+}   // and prompt them to try again (repeat this until they make a valid move).
