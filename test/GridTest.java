@@ -67,9 +67,7 @@ public class GridTest {
 
     @Test
     public void shouldReturnFalseIfPositionIsNotTaken(){
-        int location = 1;
-        String marker = "X";
-        grid.drawWithInput(location, marker);
+        int location = 3;
 
         assertFalse(grid.isPositionAvailable(location));
     }
