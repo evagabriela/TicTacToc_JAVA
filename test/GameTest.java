@@ -7,7 +7,6 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-import static org.junit.Assert.assertEquals;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 
@@ -19,13 +18,14 @@ public class GameTest {
     private Game game;
     private Grid grid;
     private ArrayList<String> positions;
+    private PrintStream printStream;
 
     @Before
     public void setUp() throws Exception {
         out = mock(PrintStream.class);
         game = new Game(out, positions);
         positions= new ArrayList<String>(Arrays.asList(" ", " ", " ", " ", " ", " ", " ", " ", " "));
-        grid = new Grid();
+        grid = new Grid(printStream, positions);
 
     }
 
@@ -36,13 +36,9 @@ public class GameTest {
     }
 
 
-    @Test
-    public void shouldRedrawBoardIncludingPlayerInput(){
-       String marker = "X";
-       grid.drawWithInput(marker);
 
-        assertEquals("X", positions.get(0));
-    }
+
+
 
 
 
