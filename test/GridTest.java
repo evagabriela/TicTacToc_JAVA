@@ -19,12 +19,14 @@ public class GridTest {
     private PrintStream printStream;
     private Grid grid;
     private ArrayList<String> positions;
+     private PrintStream out;
 
     @Before
     public void setUp() {
         printStream= mock(PrintStream.class);
         positions= new ArrayList<String>(Arrays.asList(" ", " ", " ", " ", " ", " ", " ", " ", " "));
         grid= new Grid(printStream, positions);
+        out = mock(PrintStream.class);
     }
 
    @Test
@@ -72,6 +74,7 @@ public class GridTest {
 
         assertFalse(grid.isPositionTaken(location));
     }
+
 
 //    Repeat until the board is filled
 //     Alternate player turns until the board is filled. Draw the board once it is full and display the message, “Game is a draw”.

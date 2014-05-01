@@ -41,8 +41,12 @@ public class GameTest {
         String marker="X";
         grid.drawWithInput(location, marker);
         grid.isPositionTaken(1);
+        game.positionTakenMessage();
 
         verify(out).println("Location already taken");
     }
+
+
+
 
 }

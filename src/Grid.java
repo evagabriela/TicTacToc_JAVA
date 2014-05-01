@@ -35,7 +35,10 @@ public class Grid {
 
     public boolean isPositionTaken(int position) {
             return !(positions.get(position - 1).equals(" "));
+
     }
+
+
 
 
     public boolean isFull() {

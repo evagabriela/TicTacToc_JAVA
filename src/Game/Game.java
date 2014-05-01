@@ -20,4 +20,7 @@ public class Game {
     }
 
 
+    public void positionTakenMessage() {
+        printStream.println("Location already taken");
+    }
 }
